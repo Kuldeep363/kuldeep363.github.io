@@ -129,7 +129,15 @@ nav{
     
 
 /*footer end*/
-
+#mine {
+	color:white;
+	text-align: center;
+	
+}
+#mine img{
+	width: 20px;
+	height: 20px;
+}
 
 @media (max-width:1198px){
 .nav-pills .nav-link.active {
