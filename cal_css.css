@@ -1,0 +1,108 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  box-sizing:border-box;
+  overflow:visible;
+}
+
+body,html{
+  background: linear-gradient(78deg, rgba(16, 226, 190, 0.68) 30%, rgb(166, 38, 235) 100%);
+}
+
+/*header*/
+
+header{
+	color:#000000;
+	width:100%;
+	height:100px;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight:bold;
+}
+#cal{
+	width: 40px;
+	height: 40px;
+}
+h1{
+  padding-top:20px;
+  font-size: 40px;
+  
+}
+
+/*header end*/
+form{
+	width:100%;
+}
+/* Input */
+
+#display{
+	width: 100%;
+	text-align: right;
+	font-size: 50px;
+	font-weight: bolder;
+	border: none;
+	box-shadow: 5px 5px 5px 0px rgba(11,12,12,0.6);
+	background-color: rgba(0,0,0,0.05);
+	outline: none;
+}
+
+/* Input End */
+
+
+.key{
+	width: 100%;
+	box-shadow: 5px 5px 5px 0px rgba(11,12,12,0.6);
+	border: none;
+	font-size: 17px;
+	font-weight: bolder;
+	outline: none;
+
+}
+.key:hover{
+	box-shadow: 7px 7px 5px 0px rgba(11,12,12,0.6);
+	outline: none;
+	font-size: 25px;
+
+}
+
+
+/* Footer */
+
+#love {
+	width:30px;
+	height:30px;
+	margin-top:0px;
+	padding:0px;
+}
+.mine {
+	color:rgba(218,233,27,1.00);
+	text-align: center;
+	vertical-align: middle;
+}
+
+a{
+	color: rgba(0,0,0,1.00);
+}
+
+/* Media Queries */
+
+@media (min-width:500px){
+	.key,#display{
+		height: 13vw;
+	}
+}
+@media (min-width:768px){
+	.key,#display{
+		height: 9vw;
+	}
+}
+@media (min-width:992px){
+	.key,#display{
+		height: 6vw;
+	}	
+}
+@media (min-width:1200px){
+	.key,#display{
+		height: 5vw;
+	}
+}
