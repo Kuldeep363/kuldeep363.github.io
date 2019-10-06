@@ -6,6 +6,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://kit.fontawesome.com/d081420e73.js"></script>
 
 
@@ -14,6 +15,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="cal_css.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link rel="icon" href="images/cal_icon.png">
 <script language="javascript" src="cal_js.js"></script>
 <!-- /Links/ -->
@@ -23,195 +25,202 @@
 
 <body>
 	
-	<header>
-            <h1><img src="images/cal2.jpg" alt="calculator" id="cal" >Scientific-Calculator</h1>
+	<header class="row">
+            <h1 class="col-lg-12 col-md-12 col-sm-12 col-12" data-aos="flip-right"><img src="images/cal2.jpg" alt="calculator" id="cal" >Scientific-Calculator</h1>
     </header>
 	
 	
 	
 		<form name="sci-calc" class="container mt-0">
 <!-- Display-->
-			<div class="row">
-				  <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-0 input"><input id="display" name="display" value="0" size="60" maxlength="60">
-				  </div>
-		 	</div>
-		<div class="mt-2">
+		<table class="mt-2">
+			<tr class="row">
+				  <td class="col-lg-12 col-md-12 col-sm-12 col-12 p-0 input" data-aos="fade-up-left">
+					  <input id="display" name="display" value="0" size="60" maxlength="60">
+				  </td>
+		 	</tr>
+		
 <!-- Row number 1-->
-			<div class="row">
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" >
+			<tr class="row">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn power key" name="power" value="x2" onclick="if(checkNum(this.form.display.value)) { square(this.form) }">
-				</div> 
+				</td> 
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn power key" name="power" value="&#x221A" onclick="if(checkNum(this.form.display.value))  { sqrt(this.form)}  ">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn power key" name="power" value="&#x221B" onclick="if(checkNum(this.form.display.value))  { cbrt(this.form)}  ">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					  <input type="button" class="btn power key" name="power" value="x3"      onclick="if(checkNum(this.form.display.value)) {  cube(this.form)} ">
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
-					  <input type="button" class="btn deg key" name="power" value="Deg"      onclick="if(checkNum(this.form.display.value)) {  cube(this.form)} ">
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
-					  <input type="button" class="btn rad key" name="power" value="Rad"      onclick="if(checkNum(this.form.display.value)) {  cube(this.form)} ">
-				</div>
+				</td>
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
+					  <input type="button" class="btn deg key" name="power" value="Deg"      onclick="# ">
+				</td>
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
+					  <input type="button" class="btn rad key" name="power" value="Rad"      onclick="# ">
+				</td>
 
-			</div>
+			</tr>
 <!-- Row number 2-->
-			<div class="row">
+			<tr class="row">
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn d key"       name="btnMath" value="&#177" onclick="changeSign(this.form.display)">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnMat1 key" name="btnMath" value="Sin"   onclick="if(checkNum(this.form.display.value)) { sin(this.form) }">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnMat1 key" name="btnMath" value="Cos"   onclick="if(checkNum(this.form.display.value)) { cos(this.form) }">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnMat1 key" name="btnMath" value="Tan"   onclick="if(checkNum(this.form.display.value)) { tan(this.form) }">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnTop key"  name="btnTop"  value="&#8678"   onclick="deleteChar(this.form.display)">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnTop key"  name="btnTop"  value="AC"    onClick="this.form.display.value=  0 ">
-				</div>
-			</div>
+				</td>
+			</tr>
 <!-- Row number 3-->
-			<div class="row">
-				 <div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+			<tr class="row">
+				 <td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					 <input type="button" class="btn btnMat1 key" name="btnMat1" value="inv(Sin)"  onclick="if(checkNum(this.form.display.value)) { asin(this.form) }">
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				</td>
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnNum key" name="btnNum" value="7" onclick="addChar(this.form.display, '7')">
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				</td>
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnNum key" name="btnNum" value="8" onclick="addChar(this.form.display, '8')">
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				</td>
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnNum key" name="btnNum" value="9" onclick="addChar(this.form.display, '9')">
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				</td>
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnMath key" name="btnMath" value="/"         onclick="addChar(this.form.display, '/')">
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				</td>
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnMath key" name="btnMath" value="*"         onclick="addChar(this.form.display, '*')">
-				</div>
-			</div>
+				</td>
+			</tr>
 <!-- Row number 4-->
-			<div class="row">
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+			<tr class="row">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnMat1 key" name="btnMat1" value="inv(Cos)" onclick="if(checkNum(this.form.display.value)) { acos(this.form) }">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnNum key" name="btnNum" value="4"          onclick="addChar(this.form.display, '4')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnNum key" name="btnNum" value="5"          onclick="addChar(this.form.display, '5')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnNum key" name="btnNum" value="6"          onclick="addChar(this.form.display, '6')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnOpps key" name="btnOpps" value="ln"       onclick="if(checkNum(this.form.display.value)) { ln(this.form) }">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnMath key" name="btnMath" value="&#9866"        onclick="addChar(this.form.display, '-')">
-				</div>
-			</div>
+				</td>
+			</tr>
 <!-- Row number 5-->
-			<div class="row">
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+			<tr class="row">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnMat1 key" name="btnMat1" value="inv(Tan)"     onclick="if(checkNum(this.form.display.value)) { atan(this.form) }">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnNum key" name="btnNum" value="1"              onclick="addChar(this.form.display, '1')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnNum key" name="btnNum" value="2"              onclick="addChar(this.form.display, '2')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnNum key" name="btnNum" value="3"              onclick="addChar(this.form.display, '3')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnOpps key" name="btnOpps" value="exp"          onclick="if(checkNum(this.form.display.value)) { exp(this.form) }">
-				</div>
+				</td>
 				
-				<div  class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td  class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" rowspan="2" data-aos="fade-left">
 					<input type="button" class="btn btnMath1 key" name="btnMath1" value="+" onclick="addChar(this.form.display, '+')">
-				</div>
-			</div>
+				</td>
+			</tr>
 <!-- Row number 6-->
-			<div class="row">
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+			<tr class="row">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnSymb key" name="btnMath" value="!" onclick="facto(this.form.display)">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnNum key" name="btnNum" value="0" onclick="addChar(this.form.display, '0')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnNum key" name="btnNum" value="00" onclick="addChar(this.form.display, '00')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnNum key" name="btnNum" value="&#46;" onclick="addChar(this.form.display, '&#46;')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnOpps key" name="btnOops" value=" Rem" onclick=" addChar(this.form.display, '%')">
-				</div>
-				<div  class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
-					<p class="mine">Made With <img src="images/giphy.gif" alt="LOVE" id="love"></p>
-				</div>
-			</div>
+				</td>
+			</tr>
 <!-- Row number 7-->
-			<div class="row">
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+			<tr class="row">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnSymb key" name="btnOpps" value="&#960;" onclick="addChar(this.form.display,'3.14159265359')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnSymb key" name="btnMath" value="(" onclick="addChar(this.form.display, '(')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-right">
 					<input type="button" class="btn btnSymb key" name="btnMath" value=")" onclick="addChar(this.form.display,')')">
-				</div>
+				</td>
 				
-				<div class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" data-aos="fade-left">
 					<input type="button" class="btn btnSymb key" name="btnMath" value="Ans" onclick="ans(this.form.display)">
-				</div>
+				</td>
 				
-				<div  class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
+				<td class="col-lg-2 col-md-2 col-sm-2 col-2 p-0" colspan="2" data-aos="fade-left">
 					<input type="button" class="btn btnSymb1 key" name="btnSymb1" value="&#9868" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }">
-				</div>
-				<div  class="col-lg-2 col-md-2 col-sm-2 col-2 p-0">
-					 <p class="mine">By <a href="images/Kuldeep_Rawat_Resume.pdf" target="_blank">KuLdEeP RaWaT</a></p>
-				</div>
-			</div>
-		</div>
+				</td>
+			</tr>
+		</table>
 	</form> 
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	
+<!--	Script for initiate AOS pulgin-->
+	
+	<script>
+  AOS.init();
+</script>
+	
 </body>
 </html>
