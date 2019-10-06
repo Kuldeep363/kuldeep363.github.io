@@ -3,7 +3,10 @@
 	padding: 0px;
 	box-sizing: border-box;
 }
-
+html{
+	max-width: 100%;
+	overflow-x:hidden!important;
+}
 body{
 	background: url( "images/stars_milky_way_space.jpg") no-repeat center center fixed;
 	background-size: cover;
