@@ -219,8 +219,3 @@ html{
 		color:white ! important;
 	}
 	}
-@media (max-width:500px){
-	html{
-		overflow-x:hidden!important;
-		}	
-}
