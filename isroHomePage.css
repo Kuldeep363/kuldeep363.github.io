@@ -201,6 +201,9 @@ nav{
 
 
 @media (max-width:1198px){
+html{
+	overflow-x:hidden!important;
+	}
 .nav-pills .nav-link.active {
     color: #fff;
     background-color: #DC0B0B;
@@ -216,3 +219,8 @@ nav{
 		color:white ! important;
 	}
 	}
+@media (max-width:500px){
+	html{
+		overflow-x:hidden!important;
+		}	
+}
