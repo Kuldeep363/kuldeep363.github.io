@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://mincdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Diwali Countdown</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="../animate.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Fascinate+Inline&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+		body{
+			background: url(" images/giphy (2).gif") no-repeat center center fixed;
+			background-size: cover;
+		}
+		section{
+			height: 100%;
+		}
+		table{
+			position: absolute;
+			top: 30%;
+		}
+        th td{
+            text-align: center;
+            
+        }
+		td{
+			padding: 15px;
+            text-align: center;
+		}
+		#days,#hours,#minutes,#seconds{
+            font-family: 'Fascinate Inline', cursive;
+            background-color: black;
+            margin-left: 30px;
+            color: blue;
+        }
+/*		media queries  */
+		@media (min-width:300px){
+			td{
+				font-size: 20px;
+			}
+		}
+		@media (min-width:719px){
+			td{
+				font-size: 30px;
+			}
+		}
+		@media (min-width:1012px){
+			td{
+				font-size: 50px;
+			}
+		}
+    </style>
+</head>
+<body>
+    
+</iframe>
+    <section class="container d-flex justify-content-center" >
+        <table >
+            <th>
+                <td colspan="2" style="font-family: 'Alfa Slab One', cursive;text-align: center;color:red; font-weight: bolder;">Diwali Countdown</td>
+            </th>
+            <tr style="color: white;font-weight: bolder;font-size: 10px;">
+                <td>Days</td>
+                <td>Hours</td>
+                <td>Minutes</td>
+                <td>Seconds</td>
+            </tr>
+            <tr>
+                <td id="days"></td>
+                <td id="hours"></td>
+                <td id="minutes"></td>
+                <td id="seconds"></td>
+            </tr>
+        </table>
+    </section>
+    <div class="d-flex justify-content-center" style="font-size: 20px;color: aliceblue;">
+        <p id="mine">Made With <img src="images/giphy.gif" alt="LOVE" id="love" style="width:30px ;height:30px ;"> By <a href="images/Kuldeep_Rawat_Resume.pdf" target="_blank" id="me">KuLdEeP RaWaT</a></p>
+       
+    </div>
+    <div>
+        <p style="margin-top: 20px; color: rgb(240, 184, 32);font-weight: bolder;font-size: 30px;">
+            -Happy Diwali From RaWaT Family
+</p>
+    </div>
+    <script>
+        function Countdown(){
+            var now=new Date();
+            var Diwali=new Date(2019,09,27);
+            var nowTime=now.getTime();
+            var eventTime=Diwali.getTime();
+
+            var timeLeft=eventTime-nowTime;
+
+            var s=Math.floor(timeLeft/1000);
+            var m=Math.floor(s/60);
+            var h=Math.floor(m/60);
+            var d=Math.floor(h/24);
+
+            h%=24;
+            m%=60;
+            s%=60;
+
+            d=(d<10)?"0"+d:d;
+            h=(h<10)?"0"+h:h;
+            m=(m<10)?"0"+m:m;
+            s=(s<10)?"0"+s:s;
+
+            document.getElementById("days").textContent=d;
+            document.getElementById("hours").textContent=h;
+            document.getElementById("minutes").textContent=m;
+            document.getElementById("seconds").textContent=s;
+
+            // document.getElementById("days").innerText=d;
+            // document.getElementById("hours").innerText=h;
+            // document.getElementById("minutes").innerText=m;
+            // document.getElementById("seconds").innerText=s;
+
+            setTimeout(Countdown,1000);
+        }
+        Countdown();
+    </script>
+</body>
+</html>
