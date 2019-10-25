@@ -14,13 +14,14 @@
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <style>
-		body{
+		html,body{
 			background: url(" images/giphy (2).gif") no-repeat center center fixed;
 			background-size: cover;
-			heigth:100%;
+            
 		}
+		
 		table{
-			position: absolute;
+			position: relative;
 			top: 30%;
 		}
         th td{
@@ -57,7 +58,15 @@
 </head>
 <body>
     
-</iframe>
+    <div class="d-flex justify-content-center" style="font-size: 20px;color: aliceblue;">
+        <p id="mine">Made With <img src="images/giphy.gif" alt="LOVE" id="love" style="width:30px ;height:30px ;"> By <a href="images/Kuldeep_Rawat_Resume.pdf" target="_blank" id="me">KuLdEeP RaWaT</a></p>
+       
+    </div>
+    <div>
+        <p style="margin-top: 20px; color: rgb(247, 248, 248);font-weight: bolder;font-size: 30px;">
+            -Happy Diwali From RaWaT Family
+</p>
+    </div>
     <section class="container d-flex justify-content-center" >
         <table >
             <th>
@@ -77,15 +86,7 @@
             </tr>
         </table>
     </section>
-    <div class="d-flex justify-content-center" style="font-size: 20px;color: aliceblue;">
-        <p id="mine">Made With <img src="images/giphy.gif" alt="LOVE" id="love" style="width:30px ;height:30px ;"> By <a href="images/Kuldeep_Rawat_Resume.pdf" target="_blank" id="me">KuLdEeP RaWaT</a></p>
-       
-    </div>
-    <div>
-        <p style="margin-top: 20px; color: rgb(240, 184, 32);font-weight: bolder;font-size: 30px;">
-            -Happy Diwali From RaWaT Family
-</p>
-    </div>
+  
     <script>
         function Countdown(){
             var now=new Date();
