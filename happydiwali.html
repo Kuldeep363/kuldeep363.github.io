@@ -17,12 +17,12 @@
 		html,body{
 			background: url(" images/giphy (2).gif") no-repeat center center fixed;
 			background-size: cover;
-            
+            height: 100%;
 		}
 		
 		table{
-			position: relative;
-			top: 30%;
+            align-content: center;
+            margin-top:25%;
 		}
         th td{
             text-align: center;
@@ -37,6 +37,9 @@
             background-color: black;
             margin-left: 30px;
             color: blue;
+        }
+        footer{
+
         }
 /*		media queries  */
 		@media (min-width:300px){
@@ -58,15 +61,6 @@
 </head>
 <body>
     
-    <div class="d-flex justify-content-center" style="font-size: 20px;color: aliceblue;">
-        <p id="mine">Made With <img src="images/giphy.gif" alt="LOVE" id="love" style="width:30px ;height:30px ;"> By <a href="images/Kuldeep_Rawat_Resume.pdf" target="_blank" id="me">KuLdEeP RaWaT</a></p>
-       
-    </div>
-    <div>
-        <p style="margin-top: 20px; color: rgb(247, 248, 248);font-weight: bolder;font-size: 30px;">
-            -Happy Diwali From RaWaT Family
-</p>
-    </div>
     <section class="container d-flex justify-content-center" >
         <table >
             <th>
@@ -86,7 +80,18 @@
             </tr>
         </table>
     </section>
-  
+    <footer>
+    
+    <div>
+        <p style="margin-top: 20px; color: rgb(247, 248, 248);font-weight: bolder;font-size: 30px;">
+            -Happy Diwali From RaWaT Family
+</p>
+    </div>
+    <div class="d-flex justify-content-center" style="font-size: 20px;color: aliceblue;">
+        <p id="mine">Made With <img src="images/giphy.gif" alt="LOVE" id="love" style="width:30px ;height:30px ;"> By <a href="images/Kuldeep_Rawat_Resume.pdf" target="_blank" id="me">KuLdEeP RaWaT</a></p>
+       
+    </div>
+</footer>
     <script>
         function Countdown(){
             var now=new Date();
