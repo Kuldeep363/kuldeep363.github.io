@@ -6,6 +6,7 @@
 	
 <!-- Scripts -->
 	
+<script src="isro.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -30,7 +31,7 @@
 <body>
 <!--	Top Navigation Bar-->
 
-		<nav class="navbar navbar-expand-lg nav-pills m-0 p-0  w-100  align-content-center bg-dark top-navbar ">
+		<nav class="navbar navbar-expand-lg nav-pills m-0 p-0  w-100  align-content-center bg-dark top-navbar " id="top">
 		<div class="d-flex justify-content-center"><a href="#" class="navbar-brand text-danger ml-3"><img src="images/output-onlinepngtools.png" alt="ISRO" style="width:100px;outline:none" ></a></div>
 		<button  class="navbar-toggler" data-toggle="collapse" data-target="#navigation0" style="outline: none" id="open" >&#9778</button>
 
@@ -47,11 +48,11 @@
   			</li>
 		</ul>
 		<div class="d-flex justify-content-center">
-			<img src="images/govofindia-logo.jpg" alt="gov">
+			<a href="https://www.india.gov.in/" target="_blank"><img src="images/govofindia-logo.jpg" alt="gov"></a>
 			<img src="images/mahatma_gandhi_150.png" alt="mahatma gandhi">
 		</div>
 		<div class="d-flex justify-content-center">
-			<p class="text-white ">Government of INDIA</p>	
+			<a href="https://www.india.gov.in/" target="_blank"><p class="text-white ">Government of INDIA</p></a>
 		</div>
 		
 		</div>
@@ -107,7 +108,7 @@
 	</nav>	
 <!-- Carousel -->
 		
-	<div id="demo" class="carousel slide mt-4  data-ride="carousel">
+	<div id="demo" class="carousel slide mt-4"  data-ride="carousel">
 		
 <!--		carousel indicators -->
 		
@@ -295,7 +296,49 @@
 	</div>
 </div>
 </div>
-
+<!-- Some More Info cards-->
+<div class="container mt-2">
+	<div class="row morecard">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-right" data-aos-duration="2000">
+			<div class="card mt-3">
+				<p class="cardText text-center"><i class=" fas fa-bullhorn pt-4"></i></p>
+				
+				<div class="card-body text-black">
+					<p class="card-text text-center " style="font-size: 1.4rem"><a href="" class="text-decoration-none ">Story of the Week : Super flares in Nascent Sun: Evidence from Meteorites!</a></p>
+					<p class="cardText" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;"><strong>Scientists at Physical Research Laboratory, Ahmedabad working in collaboration with University of Heidelberg, Germany,have recently reported Giant flares from the embryonic Sun. The super-flare has been calculated to be about a million times stronger in intensity compared to the highest X-class flare observed from the modern Sun.</strong></p>
+				</div>
+				<div class="text-center">
+					<button class="btn btn-primary mb-2" title="Read More Updates">अधिक जानें/Read More</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-up" data-aos-duration="2000">
+			<div class="card mt-3">
+				<p class=" cardText text-center"><i class=" far fa-clock pt-4"></i></p>
+				<div class="card-body text-black">
+					<a href="" title="कालक्रम/Timeline" class="text-decoration-none"><h3 class="text-center">कालक्रम/Timeline</h3></a>
+					<p class="cardText" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;">दशकों से इसरो की यात्रा का व्यापक कालक्रम Comprehensive timeline of ISRO's journey through decades.</p></div>
+				<div class="card-img-bottom text-center mb-5"><a href="#" target="_self"><img src="images/timeline-teaser.png" alt="timeline-teaser" title="timeline-teaser"></a></div>
+			</div>
+		</div>
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" data-aos="fade-left" data-aos-duration="2000">
+			<div class="card mt-3">
+				<p class=" cardText text-center"><i class=" fas fa-plus-circle pt-4"></i></p>
+				<div class="card-body text-black ">
+					<a href="/media" title="Update/अपडेट" class="text-decoration-none"><h3 class="text-center">अपडेट/Updates</h3></a>
+					<a href="" target="_self" class="mt-1 text-decoration-none " style="color: rgba(0,0,0,1.00)"><p class="cardText text-center" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;"><strong>Oct 10,2019</strong>:Solar flare observed by the Solar X-ray Monitor on Chandrayaan-2</p></a>
+					<a href="" target="_self" class="mt-1 text-decoration-none " style="color: rgba(0,0,0,1.00)"><p class="cardText text-center" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;"><strong>Oct 04,2019</strong>:Chandrayaan2-images from the Orbitor High Resolution Camera</p></a>
+					<a href="" target="_self" class="mt-1 text-decoration-none " style="color: rgba(0,0,0,1.00)"><p class="cardText text-center" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;"><strong>Oct 04,2019</strong>:US Secretory of commerce visited ISRO</p></a>
+					<a href="" target="_self" class="mt-1 text-decoration-none " style="color: rgba(0,0,0,1.00)"><p class="cardText text-center" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;"><strong>Oct 03,2019</strong>:Studying Earth's extended magnetosphere(geotail)plasma around MOON</p></a>
+					<a href="" target="_self" class="mt-1 text-decoration-none " style="color: rgba(0,0,0,1.00)"><p class="cardText text-center" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;"><strong>Sep 23,2019</strong>Thailand Ambassador visited ISRO</p></a>
+				</div>
+				<div class="text-center">
+					<button class="btn btn-primary mb-2" title="Read More Updates">अधिक जानें/Read More</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
 
 <!-- Main footer -->
 	
@@ -464,12 +507,17 @@
             <a href="images/cqw_isrowebsite_www_isro_gov_in.pdf" target="_blank">
                 <p><img src="images/cqw_logo.gif" alt="certification" title="CQW ISRO Website"></p>
             </a>
+		</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-3 text-center">
+            <a href="#top" title="Back to top">
+				<i class="fas fa-angle-up" style="font-size: 40px;"></i>
+			</a>
         </div>
     </div>
     <p class="text-center">Copyright &copy ISRO, All Rights Reserved</p>
     </div>
 </footer>
-	
+<a id="button"></a>
 <!--	Developer  -->
 	
 <div class="row">
