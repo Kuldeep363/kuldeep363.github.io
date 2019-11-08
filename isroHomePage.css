@@ -147,24 +147,6 @@ nav a:hover{
 	background-color: bisque;
 }
 
-.fa-bullhorn{
-	font-size: 45px;
-	color: white;
-}
-.icon{
-	background-color: #3434F0;
-	transition: 0.5s;
-}
-.card2:hover .icon{
-	background-color: white;
-}
-.card2:hover .fa-bullhorn{
-	color:blue;
-}
-.rounded-circle{
-	padding-left: 40%;
-	padding-right: 40%;
-}
 /* card 2 end*/
 
 /* Some More Info*/
