@@ -54,7 +54,7 @@ nav{
 	background-color:rgba(251,251,251,0);
 
 }
- .nav-item .nav-link:hover, .nav-item .nav-link:hover{
+ .nav-item .nav-link:hover{
 	color: rgba(13,230,70,0.77);
 }
 /*.navbar2{
@@ -62,8 +62,11 @@ nav{
 	position: sticky;
 	top:0px;
 }*/
- .nav-item .active:hover, .nav-item .active:hover{
+ .nav-item .active:hover{
 	color: aliceblue;
+}
+nav a:hover{
+	text-decoration: none;
 }
 #navbar{
 	position:sticky;
@@ -122,12 +125,12 @@ nav{
 	background-color: black;
 	font-family: 'Chilanka', cursive;
 	font-weight: bolder;
-	transition:  ease-in-out 0.5s;
+	
 }
 .card1:hover .overlayer{
 	height: 100%;
 }
-.cardText{
+.overlayer .cardText{
 	position: absolute;
 	top:30%;
 	left:30%;
@@ -163,6 +166,57 @@ nav{
 	padding-right: 40%;
 }
 /* card 2 end*/
+
+/* Some More Info*/
+.morecard .card{
+	box-sizing: border-box;
+	background-color: rgba(225,225,225,0.98);
+	transition: all .5s ease-in;
+}
+.morecard .card:hover{
+	transform: scale(1.02);
+}
+.morecard a:hover{
+	color: crimson;
+}
+.morecard button{
+	width: 70%;
+	transition: width .5s ease-in;
+	box-shadow: 2px 2px 8px 0px rgba(75,74,74,0.91);
+}
+.morecard button:hover{
+	width: 90%;
+}
+.morecard button:focus{
+	box-shadow: 4px 4px 8px 0px rgba(75,74,74,0.91);
+	outline: none!important;
+}
+.morecard a p:hover{
+	color:rgb(19, 16, 165);
+}
+.morecard a p:focus{
+	color:rgb(231, 149, 27);
+}
+::selection{
+	color: white;
+	background-color: rgba(254,101,0,1.00);
+}
+.fa-bullhorn,.fa-clock,.fa-plus-circle{
+	color: black;
+	/* position: relative;
+	left: 30%; */
+	font-size: 100px;
+	transition: all .5s ease-in;
+}
+.morecard .card:hover .fa-bullhorn{
+	color: rgba(39,66,226,1.00);
+}
+.morecard .card:hover .fa-clock{
+	color: rgba(39,66,226,1.00);
+}
+.morecard .card:hover .fa-plus-circle{
+	color: rgba(39,66,226,1.00);
+}
 
 /*footer*/
 
@@ -201,7 +255,7 @@ nav{
 	height: 20px;
 }
 
-
+  
 @media (max-width:1198px){
 html{
 	overflow-x:hidden!important;
