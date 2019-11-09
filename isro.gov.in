@@ -339,7 +339,25 @@
 		</div>
 	</div>	
 </div>
-
+<!-- Vision -->
+<div class="container mt-3 mb-3" id="btm-container" data-aos="fade-in" data-aos-duration="2000">
+	<div class="cover">	
+		<div class="overlayer1">
+			<div class="middle">
+				<div class="d-flex justify-content-center pt-5">
+					<div class="text-center">
+						<img src="images/ISRO Logo.png" alt="isro">
+					</div>
+				</div>
+				<div class="d-flex justify-content-center pb-5 " >
+					<div>
+						<p class="text-center">Our vision is to harness space technology for national development, while pursuing space science research and planetary exploration.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- Main footer -->
 	
 <footer class="page-footer d-flex justify-content-around mt-3" data-aos="fade-left" data-aos-duration="1000">
