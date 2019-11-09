@@ -154,6 +154,7 @@ nav a:hover{
 	box-sizing: border-box;
 	background-color: rgba(225,225,225,0.98);
 	transition: all .5s ease-in;
+	height:650px;
 }
 .morecard .card:hover{
 	transform: scale(1.02);
@@ -200,6 +201,35 @@ nav a:hover{
 	color: rgba(39,66,226,1.00);
 }
 
+/* vision */
+
+#btm-container .cover{
+	background: url("images/isro_cartosat_2_series_image.jpg") no-repeat center center ;
+	background-size: cover;
+	width: 100%;
+	height: 400px;
+}
+#btm-container p{
+	color:white;
+	font-size: 20px;
+	
+}
+#btm-container .overlayer1{
+	background-color: rgba(0, 0, 0, 0.7);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	transition: background-color 0.5s ease-in-out;
+}
+#btm-container .overlayer1:hover{
+	background-color: rgba(0, 0, 0, 0.9);
+}
+#btm-container .middle{
+	display: table-cell;
+	padding: 10px;
+	vertical-align: middle;
+	text-align:center;
+}
 /*footer*/
 
 .page-footer a{
