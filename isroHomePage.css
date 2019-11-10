@@ -254,7 +254,18 @@ nav a:hover{
 	box-shadow: 0px 0px 5px 5px white;
 }
     
-
+   
+#thrust{
+    font-size: 25px;
+    transform: rotateZ(180deg);
+    margin-left:-40px;
+    padding-bottom:28px;
+    visibility: hidden;
+}
+#thrustid:hover  #thrust {
+    visibility: visible;
+    color:rgb(255, 0, 0);
+}
 /*footer end*/
 
 #mine {
@@ -263,8 +274,8 @@ nav a:hover{
 	
 }
 #mine img{
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 }
 
   
@@ -286,4 +297,13 @@ html{
 		transition:0.6s ! important;
 		color:white ! important;
 	}
+	}
+	@media(max-width:400px){
+		#thrust{
+			font-size: 25px;
+			transform: rotateZ(180deg);
+			margin-left:0px;
+			padding-bottom:0px;
+			visibility: hidden;
+		}
 	}
