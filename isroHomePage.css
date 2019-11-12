@@ -280,13 +280,9 @@ nav a:hover{
 
   
 @media (max-width:1198px){
-html{
+	html{
 	overflow-x:hidden!important;
 	}
-.nav-pills .nav-link.active {
-    color: #fff;
-    background-color: #DC0B0B;
-}
 	.navbar-toggler{
 		font-size: 30px !important;
 		color:white ! important;
@@ -306,4 +302,8 @@ html{
 			padding-bottom:0px;
 			visibility: hidden;
 		}
+		.nav-link.active {
+			color: #fff!important;
+			background-color: #DC0B0B!important;
+			}
 	}
