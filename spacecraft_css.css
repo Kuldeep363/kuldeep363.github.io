@@ -129,13 +129,10 @@ nav a:hover{
 }
   
 @media (max-width:1198px){
-html{
+	html{
 	overflow-x:hidden!important;
 	}
-.nav-pills .nav-link.active {
-    color: #fff;
-    background-color: #DC0B0B;
-}
+
 	.navbar-toggler{
 		font-size: 30px !important;
 		color:white ! important;
@@ -154,5 +151,44 @@ html{
         margin-left:0px;
         padding-bottom:0px;
         visibility: hidden;
-    }
+	}
+	.container2 .row1 p{
+		font-size: 25px!important;
+	}
+	.nav-link.active {
+		color: #fff!important;
+		background-color: #DC0B0B!important;
+		}
+}
+.container1 {
+	background-color: rgba(247, 244, 244, 0.829);
+	border-radius: 10px;
+	transition:background-color 0.5s ease-in-out ;
+}
+.container1:hover {
+	background-color: rgb(247, 244, 244);
+}
+.container1 .row1 a,.container2 .row a{
+	text-decoration: none;
+}
+.container1 .row1 a:hover,.container2 .row a:hover{
+	color:red;
+}
+.container2 {
+	background-color: white;
+	border-radius: 10px;
+}
+.container2 .row1 p{
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+}
+.container2 .row .a{
+	transition: transform 0.5s ease-in-out;
+}
+.container2 .row .a:hover{
+	transform: scale(1.2);
+}
+.container2 .row .a p{
+	font-size: 20px;
 }
